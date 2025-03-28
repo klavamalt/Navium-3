@@ -1,0 +1,41 @@
+@font-face {
+  font-family: 'Cascadia Code PL Bold';
+  src: url('/fonts/CascadiaCodePL-Bold.woff2') format('woff2');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Cascadia Code PL ExtraLight';
+  src: url('../fonts/CascadiaCodePL-ExtraLight.woff2') format('woff2');
+  font-weight: 200; /* Light */
+}
+
+@font-face {
+  font-family: 'Cascadia Code PL Light';
+  src: url('../fonts/CascadiaCodePL-Light.woff2') format('woff2');
+  font-weight: 300; /* Light */
+}
+
+@font-face {
+  font-family: 'Cascadia Code PL Regular';
+  src: url('../fonts/CascadiaCodePL-Regular.woff2') format('woff2');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Cascadia Code PL Semibold';
+  src: url('../fonts/CascadiaCodePL-SemiBold.woff2') format('woff2');
+  font-weight: 600; /* SemiBold */
+}
+
+@font-face {
+  font-family: 'Lovelace Regular';
+  src: url('../fonts/Lovelace-Regular.woff2') format('woff2');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'TheanoDidot Regular';
+  src: url('../fonts/TheanoDidot-Regular.woff2') format('woff2');
+  font-weight: normal;
+}

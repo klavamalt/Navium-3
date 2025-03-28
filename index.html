@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Цифровой архив воспоминаний</title>
+    <link rel="stylesheet" href="./stylesheets/reset.css" />
+    <link rel="stylesheet" href="./stylesheets/index.css" />
+    <link rel="stylesheet" href="./stylesheets/fonts.css" />
+    <link rel="stylesheet" href="./stylesheets/vars.css" />
+    <link rel="stylesheet" href="./stylesheets/basics.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/page-flip@2.0.7/dist/css/page-flip.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="modalBg" id="modal01">
+      <div class="firstScreenModal">
+        <div class="modalClose"></div>
+        <img
+          src="./images/first-screen/doc01.png"
+          class="modalPic"
+          id="modalPic01"
+          alt=""
+        />
+        <div class="modalTextWrap">
+          <h4>
+            Этот сертификат — результат месяцев подготовки. 23 января 2021 года
+            она сдавала IELTS, переживала перед экзаменом, перечитывала учебные
+            материалы и пыталась запомнить как можно больше полезных фраз.
+          </h4>
+          <h4>
+            Баллы хорошие: Listening — лучший результат, Speaking тоже
+            уверенный, но вот Reading немного подвёл. Возможно, на экзамене
+            попался сложный текст, или просто нервы взяли своё.
+          </h4>
+          <h4>
+            Теперь с этим сертификатом у неё открыты новые возможности:
+            поступление в университет, работа за границей, переезд? Или, может,
+            он так и остался лежать в папке, как напоминание о сложном,
+            но важном этапе жизни?
+          </h4>
+        </div>
+      </div>
+    </div>
+    <div class="modalBg" id="modal02">
+      <div class="firstScreenModal">
+        <div class="modalClose"></div>
+        <img
+          src="./images/first-screen/doc02.png"
+          class="modalPic"
+          id="modalPic02"
+          alt=""
+        />
+        <div class="modalTextWrap">
+          <h4>
+            Выданное в 2020 году, в разгар перемен в её жизни. Она родилась
+            в Тамбове, но документы оформлены в Краснодарском крае — значит,
+            переезд? Временная остановка? Или просто удобный экзаменационный
+            центр?
+          </h4>
+          <h4>
+            На фото — лёгкая улыбка, уверенный взгляд. С тех пор прошло
+            несколько лет. Где сейчас её права? Лежат без дела в кошельке,
+            потому что она больше передвигается на метро? Или наоборот — они
+            всегда под рукой, ведь дороги стали её второй стихией?
+          </h4>
+        </div>
+      </div>
+    </div>
+    <div class="modalBg" id="modal03">
+      <div class="firstScreenModal">
+        <div class="modalClose"></div>
+        <img
+          src="./images/first-screen/doc03.png"
+          class="modalPic"
+          id="modalPic03"
+          alt=""
+        />
+        <div class="modalTextWrap">
+          <h4>
+            Толстая папка с оранжевой обложкой — сценарий к фильму «Амадей».
+            Судя по потёртой обложке и слегка загнутым углам, этот экземпляр уже
+            многое пережил.
+          </h4>
+          <h4>
+            Как он оказался у неё? Может, это память о поездке в США,
+            о знакомстве с кем‑то из киноиндустрии? Или она когда‑то мечтала
+            работать в кино и изучала сценарное мастерство?
+          </h4>
+        </div>
+      </div>
+    </div>
+    <div class="modalBg" id="modal04">
+      <div class="firstScreenModal">
+        <div class="modalClose"></div>
+        <img
+          src="./images/first-screen/doc04.png"
+          class="modalPic"
+          id="modalPic04"
+          alt=""
+        />
+        <div class="modalTextWrap">
+          <h4>
+            Карточка лежала среди её вещей, но она не помнила, когда взяла её.
+            Подпись внизу была её, но строка с названием книги расплывалась,
+            будто напечатанная на сломанной машинке.
+          </h4>
+          <h4>
+            Она посмотрела на дату — слишком давно. Почему она не вернула книгу?
+            Или её никогда не было? В голове вспыхнуло смутное воспоминание:
+            тихая библиотека, запах старых страниц, чья‑то рука, передающая
+            ей книгу без слов.
+          </h4>
+          <h4>Но что это была за книга, и почему она исчезла из памяти?</h4>
+        </div>
+      </div>
+    </div>
+    <div class="modalBg" id="modal05">
+      <div class="firstScreenModal">
+        <div class="modalClose"></div>
+        <img
+          src="./images/first-screen/doc05.png"
+          class="modalPic"
+          id="modalPic05"
+          alt=""
+        />
+        <div class="modalTextWrap">
+          <h4>
+            Старая потрёпанная книжка с коллекцией редких марок — вещь, явно
+            имеющая для неё особое значение. Каждая марка аккуратно вклеена,
+            будто собрана годами, возможно, передана по наследству. Они
+            из разных стран, некоторые с потёртыми краями, другие — яркие, как
+            будто куплены недавно.
+          </h4>
+          <h4>
+            На левой странице — её фотография, но зачем? Может, это не просто
+            коллекция, а что‑то большее: напоминание о путешествиях, о семье или
+            даже об утраченной мечте?
+          </h4>
+        </div>
+      </div>
+    </div>
+    <div class="modalBg" id="modal06">
+      <div class="firstScreenModal">
+        <div class="modalClose"></div>
+        <img
+          src="./images/first-screen/doc06.png"
+          class="modalPic"
+          id="modalPic06"
+          alt=""
+        />
+        <div class="modalTextWrap">
+          <h4>
+            Этот клочок бумаги — напоминание о дне, когда она впервые оказалась
+            в Нью-Йорке в качестве приглашённого гостя на независимой
+            радиостанции Montez Press Radio. Август 2018 года, знойный вечер,
+            прохладный воздух студии. Она сидела напротив Kellam Matthews,
+            обсуждая искусство, культуру и жизнь за границей.
+          </h4>
+          <h4>
+            Карандашные отметки на часах — её время выхода в эфир. Что она тогда
+            говорила? Были ли её слова спонтанны или давно продуманы? Остался ли
+            у неё записанный эфир на память?
+          </h4>
+        </div>
+      </div>
+    </div>
+    <div class="modalBg" id="modal07">
+      <div class="firstScreenModal">
+        <div class="modalClose"></div>
+        <img
+          src="./images/first-screen/doc07.png"
+          class="modalPic"
+          id="modalPic07"
+          alt=""
+        />
+        <div class="modalTextWrap">
+          <h4>
+            Когда‑то этот документ был ключом к путешествиям, новой жизни,
+            переменам. Теперь же он исписан, закрашен и почти неузнаваем.
+            Почему? Она аннулировала его? Или просто злилась на свою
+            прошлую жизнь?
+          </h4>
+          <h4>
+            Дата выдачи: 2016 год. С тех пор многое изменилось. Где она была
+            в момент, когда этот паспорт стал бесполезен? Возможно, где‑то рядом
+            есть новый документ — но уже не российский?‥
+          </h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="modalBg" id="drModalWin01">
+      <div class="firstScreenModal">
+        <div class="modalClose"></div>
+        <img
+          src="./images/draggable/phone.png"
+          class="modalPic"
+          id="modalPicPhone"
+          alt=""
+        />
+        <div class="modalTextWrap">
+          <h4>
+            Телефон упал с её рук в тот вечер, когда она не знала, что сказать.
+            Экран разлетелся на тысячи трещин, но она не подняла его сразу —
+            просто смотрела, как в разбитой поверхности отражается
+            её собственное лицо.
+          </h4>
+          <h4>
+            С тех пор он лежал в ящике, мёртвый и бесполезный, но выбросить его
+            она так и не смогла. Там всё ещё были старые сообщения, фотографии,
+            голосовые записи, которые больше нельзя было открыть. Всё, что
+            когда‑то казалось важным, теперь было скрыто за слоем треснувшего
+            стекла.
+          </h4>
+          <h4>
+            Она думала починить его, но каждый раз откладывала. Может, потому
+            что боялась того, что найдёт внутри.
+          </h4>
+        </div>
+      </div>
+    </div>
+    <div class="modalBg" id="drModalWin02">
+      <div class="firstScreenModal">
+        <div class="modalClose"></div>
+        <img
+          src="./images/draggable/bracelet.png"
+          class="modalPic"
+          id="modalPicBracelet"
+          alt=""
+        />
+        <div class="modalTextWrap">
+          <h4>
+            Они сделали эти браслеты вместе в один из тех вечеров, когда время
+            пролетает незаметно. Сидели на полу, перебирая бусины, смеялись,
+            спорили, какой порядок цветов выбрать.
+          </h4>
+          <h4>
+            — В этот раз мы знаем друг друга, — сказал кто‑то, нанизывая
+            последние буквы.
+          </h4>
+          <h4>
+            Она носила этот браслет какое‑то время, а потом он случайно
+            затерялся среди вещей. Но когда она снова нашла его, воспоминания
+            о той тёплой ночи сразу вернулись.
+          </h4>
+        </div>
+      </div>
+    </div>
+    <div class="modalBg" id="drModalWin03">
+      <div class="firstScreenModal">
+        <div class="modalClose"></div>
+        <img
+          src="./images/draggable/card.png"
+          class="modalPic"
+          id="modalPicCard"
+          alt=""
+        />
+        <div class="modalTextWrap">
+          <h4>
+            Когда она нашла эту карту, она была чуть выцветшей, с потёртыми
+            углами — как будто пережила не одну историю. Её дед когда‑то таскал
+            колоду в кармане пальто, но именно этот туз всегда лежал отдельно,
+            в кошельке, рядом с фотографией бабушки. Он называл его своим
+            «талисманом», но никогда не рассказывал почему.
+          </h4>
+          <h4>
+            Позже, уже после его смерти, мама призналась: туз червей был первой
+            запиской, которую бабушка подложила ему в книжку вместо письма — они
+            ещё учились тогда. Просто карта. Просто сердце. Теперь этот символ
+            остался у неё — немного на удачу, немного на память, немного — чтобы
+            не забывать, как выглядят простые знаки любви.
+          </h4>
+        </div>
+      </div>
+    </div>
+    <div class="modalBg" id="drModalWin04">
+      <div class="firstScreenModal">
+        <div class="modalClose"></div>
+        <img
+          src="./images/draggable/flower.png"
+          class="modalPic"
+          id="modalPicFlower"
+          alt=""
+        />
+        <div class="modalTextWrap">
+          <h4>
+            Она пыталась склеить его, словно можно было вернуть время назад.
+          </h4>
+          <h4>
+            Цветок когда‑то был подарком — сорван в спешке, протянут с улыбкой.
+            Она хотела сохранить его, но со временем лепестки начали осыпаться.
+            Тогда она осторожно скрепила их кусочками прозрачного скотча,
+            как будто это могло остановить увядание.
+          </h4>
+          <h4>
+            Теперь он лежал перед ней — хрупкий, потрёпанный, но всё ещё целый.
+            И она не знала, что важнее: сам цветок или её попытки его удержать.
+          </h4>
+        </div>
+      </div>
+    </div>
+    <div class="modalBg" id="drModalWin05">
+      <div class="firstScreenModal">
+        <div class="modalClose"></div>
+        <img
+          src="./images/draggable/heart.png"
+          class="modalPic"
+          id="modalPicHeart"
+          alt=""
+        />
+        <div class="modalTextWrap">
+          <h4>
+            Этот медальон передавался в её семье из поколения в поколение.
+            Бабушка рассказывала, что когда‑то он принадлежал женщине, которая
+            ждала своего любимого с войны. Она прятала в нём его маленькую
+            фотографию и письмо, написанное мельчайшим почерком.
+          </h4>
+          <h4>
+            Когда медальон перешёл к ней, внутри уже не было ни фото,
+            ни письма — только царапины на внутренней стороне, оставленные
+            временем. Но даже пустым он хранил в себе истории тех, кто носил его
+            раньше.
+          </h4>
+          <h4>
+            Она не знала, кому передаст его дальше. Пока что он оставался с ней,
+            как напоминание о прошлом, которое не хотелось забывать.
+          </h4>
+        </div>
+      </div>
+    </div>
+    <div class="modalBg" id="drModalWin06">
+      <div class="firstScreenModal">
+        <div class="modalClose"></div>
+        <img
+          src="./images/draggable/keys.png"
+          class="modalPic"
+          id="modalPicKeys"
+          alt=""
+        />
+        <div class="modalTextWrap">
+          <h4>
+            Она крутила связку ключей в руках, пытаясь вспомнить, какой из них
+            больше не нужен. Один открывал квартиру, другой — почтовый ящик,
+            третий... Она остановилась.
+          </h4>
+          <h4>
+            Этот ключ был от двери, в которую она больше не собиралась стучать.
+            Она долго носила его с собой, не решаясь выбросить. Но теперь просто
+            повесила обратно на крючок — пусть полежит ещё немного.
+          </h4>
+        </div>
+      </div>
+    </div>
+    <div class="modalBg" id="drModalWin07">
+      <div class="firstScreenModal">
+        <div class="modalClose"></div>
+        <img
+          src="./images/draggable/map.png"
+          class="modalPic"
+          id="modalPicMap"
+          alt=""
+        />
+        <div class="modalTextWrap">
+          <h4>
+            Этот кусочек карты она вырвала случайно — из старого атласа, который
+            нашла в библиотеке деда. Ей нравилось, как облупились края, будто
+            карта уже побывала в путешествии. Она не искала конкретного места —
+            скорее, состояния. Такого, где ты можешь быть в пути, не зная, куда
+            ведёт дорога.
+          </h4>
+          <h4>
+            Она хранила его в блокноте, как напоминание о том, что направление —
+            не всегда координаты, а часто просто внутренний компас. Иногда она
+            мысленно водила пальцем по этим линиям и придумывала страны, которых
+            не было. Эта карта ничего не объясняла, но всегда предлагала
+            движение поиска.
+          </h4>
+        </div>
+      </div>
+    </div>
+    <div class="modalBg" id="drModalWin08">
+      <div class="firstScreenModal">
+        <div class="modalClose"></div>
+        <img
+          src="./images/draggable/photo.png"
+          class="modalPic"
+          id="modalPicPhoto"
+          alt=""
+        />
+        <div class="modalTextWrap">
+          <h4>
+            Она нашла эти фотографии в коробке с ненужными вещами. Когда‑то они
+            были важными, но теперь просто лежали, забытые. Резинка,
+            перетянувшая стопку, немного растрескалась — как и воспоминания,
+            которые они хранили.
+          </h4>
+          <h4>
+            На верхнем снимке — вулкан, выбрасывающий в небо тучи пепла. Она
+            вспомнила, как кто‑то говорил ей, что извержение можно увидеть
+            за километры, но громкий рёв земли невозможно почувствовать
+            на расстоянии.
+          </h4>
+          <h4>
+            Она покрутила свёрток в руках, думая, стоит ли посмотреть остальные
+            снимки. Или просто оставить их связанными, чтобы прошлое
+            не вырвалось наружу, как этот вулкан.
+          </h4>
+        </div>
+      </div>
+    </div>
+    <div class="modalBg" id="drModalWin09">
+      <div class="firstScreenModal">
+        <div class="modalClose"></div>
+        <img
+          src="./images/draggable/strip.png"
+          class="modalPic"
+          id="modalPicStrip"
+          alt=""
+        />
+        <div class="modalTextWrap">
+          <h4>
+            Она сидела у окна автобуса, перекатывая билетик между пальцами.
+            Вечерний город мелькал за стеклом — огни витрин, редкие прохожие,
+            мокрый асфальт после дождя.
+          </h4>
+          <h4>
+            Этот билет был последним в её рулоне. Она всегда брала их пачкой,
+            чтобы не думать о мелочи в кармане. А теперь — вот он, последний.
+          </h4>
+          <h4>
+            Когда автобус остановился, она вышла и спрятала билет в карман.
+            Просто так. Тогда ей казалось, что это не имеет значения.
+          </h4>
+          <h4>
+            Но годы спустя, найдя его снова, она поняла, что помнит тот вечер
+            до мельчайших деталей.
+          </h4>
+        </div>
+      </div>
+    </div>
+    <div class="modalBg" id="drModalWin10">
+      <div class="firstScreenModal">
+        <div class="modalClose"></div>
+        <img
+          src="./images/draggable/paper.png"
+          class="modalPic"
+          id="modalPicPaper"
+          alt=""
+        />
+        <div class="modalTextWrap">
+          <h4>
+            Этот мятый клочок — из тех, что передавали по классу, прятали
+            в пеналах и писали между уроками. Она не помнит, кто начал, но точно
+            знает, как хотелось, чтобы рядом с её именем стояла галочка. Тут
+            не было ни заголовков, ни подписей — только детская логика:
+            «ты мне — я тебе», «а ты?», «за» или «нет». Бумага быстро мялась
+            от рук, но почему‑то не теряла значения — в этих галочках было
+            больше, чем просто игра.
+          </h4>
+          <h4>
+            Позже она нашла этот листок в старой коробке — со смешанным чувством
+            стыда и тепла. Тогда казалось, что от такой галочки может зависеть
+            всё: дружба, настроение, ощущение нужности. Сейчас — это просто
+            трогательное напоминание о времени, когда всё решалось на бумаге.
+          </h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="modalBg" id="fotikModalWin01">
+      <div class="firstScreenModal">
+        <div class="modalClose"></div>
+        <img
+          src="./images/fotka01.png"
+          class="modalPic"
+          id="modalPicFotka"
+          alt=""
+        />
+        <div class="modalTextWrap">
+          <h4>
+            Она тогда только переехала — всё было незнакомым: город, ритм, даже
+            станции метро звучали иначе. В этот день она пришла на платформу
+            немного раньше обычного, без спешки, просто наблюдала. Сделала
+            снимок — как будто хотела зафиксировать момент, когда одиночество
+            ещё не пугает, а просто есть. В руке — тяжёлый рюкзак, в голове —
+            мысли, что всё начинается заново.
+          </h4>
+          <h4>
+            Эта фотография — не про поезд, а про ощущение на границе. На границе
+            между прошлым, которое только что отпустила, и будущим, которое ещё
+            не наступило. В этой паузе, среди бетона, рельсов и приглушённого
+            света, она позволила себе ничего не делать — просто стоять и дышать.
+          </h4>
+        </div>
+      </div>
+    </div>
+    <div class="modalBg" id="fotikModalWin02">
+      <div class="firstScreenModal">
+        <div class="modalClose"></div>
+        <img
+          src="./images/fotka02.png"
+          class="modalPic"
+          id="modalPicFotka"
+          alt=""
+        />
+        <div class="modalTextWrap">
+          <h4>
+            Она ехала в поезде почти без слов. За окном — размытые деревья,
+            провода, поля, которые она когда‑то знала наизусть. Всё знакомое
+            пролетало мимо, как будто в последний раз. Это была дорога из дома,
+            но не в новое место — скорее в неизвестность. Решение было принято
+            давно, но только сейчас оно стало по‑настоящему ощутимым. Она сидела
+            у окна, сжимая в руках камеру, и сделала этот снимок — почти
+            машинально, не думая.
+          </h4>
+          <h4>
+            Этот кадр — не про пейзаж. Это момент тишины перед переменой.
+            Внутри — тревога, возбуждение, сожаление, свобода. Полароид вышел
+            немного смазанным, но именно в этой нерезкости — суть.
+          </h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="customScrollbar"></div>
+    <div id="scrollPath">
+      <div id="progressMask">
+        <div id="progressBar"></div>
+      </div>
+    </div>
+    <div class="bodyWrap">
+      <div class="banner">
+        <div class="slider">
+          <div class="item pic1" style="--position: 0" id="card01">
+            <img src="./images/first-screen/doc01.png" alt="" />
+          </div>
+          <div class="item pic2" style="--position: 1" id="card02">
+            <img src="./images/first-screen/doc02.png" alt="" />
+          </div>
+          <div class="item pic3" style="--position: 2" id="card03">
+            <img src="./images/first-screen/doc03.png" alt="" />
+          </div>
+          <div class="item pic4" style="--position: 3" id="card04">
+            <img src="./images/first-screen/doc04.png" alt="" />
+          </div>
+          <div class="item pic5" style="--position: 4" id="card05">
+            <img src="./images/first-screen/doc05.png" alt="" />
+          </div>
+          <div class="item pic6" style="--position: 5" id="card06">
+            <img src="./images/first-screen/doc06.png" alt="" />
+          </div>
+          <div class="item pic7" style="--position: 6" id="card07">
+            <img src="./images/first-screen/doc07.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="section02">
+        <div class="wrapperHor end">
+          <img
+            src="./images/section02/image.png"
+            class="section02Pic01"
+            alt=""
+          />
+        </div>
+        <div class="wrapperHor">
+          <div class="wrapperHor fill">
+            <img
+              src="./images/section02/section02PicFriends.png"
+              class="section02PicFriends"
+              alt=""
+            />
+            <h1>узнать</h1>
+          </div>
+          <img
+            src="./images/section02/section02PicPen.png"
+            class="section02PicPen"
+            alt=""
+          />
+        </div>
+        <div class="wrapperHor fill">
+          <h1 class="paddingTop">историю</h1>
+          <img
+            src="./images/section02/section02PicGum.png"
+            class="section02PicGum"
+            alt=""
+          />
+          <h1 class="paddingTop">о жизни</h1>
+          <img
+            src="./images/section02/section02PicTea.png"
+            class="section02PicTea"
+            alt=""
+          />
+        </div>
+        <div class="wrapperHor">
+          <img
+            src="./images/section02/section02PicPrint.png"
+            class="section02PicPrint"
+            alt=""
+          />
+          <h1 class="questions">????</h1>
+          <img
+            src="./images/section02/section02PicVideos.png"
+            class="section02PicVideos"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="wrapperHor fill">
+        <div class="bookWrap">
+          <div id="book" class="page-flip-container">
+            <img src="./images/book/02.png" alt="" class="my-pages" />
+            <img src="./images/book/04.png" alt="" class="my-pages" />
+          </div>
+        </div>
+        <div class="bearWrap">
+          <img
+            src="./images/section03/bear_light.png"
+            class="bearLight"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="marquee">
+        <div class="marquee-track left" id="marquee-left">
+          <h1>Летний дождь</h1>
+          <img src="./images/section04/image.jpg" class="marqueePic" alt="" />
+          <h1>Море</h1>
+          <img src="./images/section04/image-1.jpg" class="marqueePic" alt="" />
+          <h1>мама</h1>
+          <img src="./images/section04/image-2.jpg" class="marqueePic" alt="" />
+          <h1>мультик</h1>
+          <img src="./images/section04/image-6.jpg" class="marqueePic" alt="" />
+          <h1>Родители</h1>
+          <img src="./images/section04/image-3.jpg" class="marqueePic" alt="" />
+          <h1>Школа</h1>
+          <img src="./images/section04/image-4.jpg" class="marqueePic" alt="" />
+          <h1>Первая любовь</h1>
+          <img src="./images/section04/image.jpg" class="marqueePic" alt="" />
+          <h1>звезды</h1>
+          <img src="./images/section04/image-5.jpg" class="marqueePic" alt="" />
+          <h1>москва</h1>
+          <img src="./images/section04/image-6.jpg" class="marqueePic" alt="" />
+          <h1>открытка</h1>
+          <img src="./images/section04/image-4.jpg" class="marqueePic" alt="" />
+          <h1>Летний дождь</h1>
+          <img src="./images/section04/image.jpg" class="marqueePic" alt="" />
+          <h1>Море</h1>
+          <img src="./images/section04/image-1.jpg" class="marqueePic" alt="" />
+          <h1>мама</h1>
+          <img src="./images/section04/image-2.jpg" class="marqueePic" alt="" />
+          <h1>мультик</h1>
+          <img src="./images/section04/image-6.jpg" class="marqueePic" alt="" />
+          <h1>Родители</h1>
+          <img src="./images/section04/image-3.jpg" class="marqueePic" alt="" />
+          <h1>Школа</h1>
+          <img src="./images/section04/image-4.jpg" class="marqueePic" alt="" />
+          <h1>Первая любовь</h1>
+          <img src="./images/section04/image.jpg" class="marqueePic" alt="" />
+          <h1>звезды</h1>
+          <img src="./images/section04/image-5.jpg" class="marqueePic" alt="" />
+          <h1>москва</h1>
+          <img src="./images/section04/image-6.jpg" class="marqueePic" alt="" />
+          <h1>открытка</h1>
+          <img src="./images/section04/image-4.jpg" class="marqueePic" alt="" />
+        </div>
+      </div>
+      <div class="marquee">
+        <div class="marquee-track left" id="marquee-right">
+          <h1>Летний дождь</h1>
+          <img src="./images/section04/image.jpg" class="marqueePic" alt="" />
+          <h1>Море</h1>
+          <img src="./images/section04/image-1.jpg" class="marqueePic" alt="" />
+          <h1>мама</h1>
+          <img src="./images/section04/image-2.jpg" class="marqueePic" alt="" />
+          <h1>мультик</h1>
+          <img src="./images/section04/image-6.jpg" class="marqueePic" alt="" />
+          <h1>Родители</h1>
+          <img src="./images/section04/image-3.jpg" class="marqueePic" alt="" />
+          <h1>Школа</h1>
+          <img src="./images/section04/image-4.jpg" class="marqueePic" alt="" />
+          <h1>Первая любовь</h1>
+          <img src="./images/section04/image.jpg" class="marqueePic" alt="" />
+          <h1>звезды</h1>
+          <img src="./images/section04/image-5.jpg" class="marqueePic" alt="" />
+          <h1>москва</h1>
+          <img src="./images/section04/image-6.jpg" class="marqueePic" alt="" />
+          <h1>открытка</h1>
+          <img src="./images/section04/image-4.jpg" class="marqueePic" alt="" />
+          <h1>Летний дождь</h1>
+          <img src="./images/section04/image.jpg" class="marqueePic" alt="" />
+          <h1>Море</h1>
+          <img src="./images/section04/image-1.jpg" class="marqueePic" alt="" />
+          <h1>мама</h1>
+          <img src="./images/section04/image-2.jpg" class="marqueePic" alt="" />
+          <h1>мультик</h1>
+          <img src="./images/section04/image-6.jpg" class="marqueePic" alt="" />
+          <h1>Родители</h1>
+          <img src="./images/section04/image-3.jpg" class="marqueePic" alt="" />
+          <h1>Школа</h1>
+          <img src="./images/section04/image-4.jpg" class="marqueePic" alt="" />
+          <h1>Первая любовь</h1>
+          <img src="./images/section04/image.jpg" class="marqueePic" alt="" />
+          <h1>звезды</h1>
+          <img src="./images/section04/image-5.jpg" class="marqueePic" alt="" />
+          <h1>москва</h1>
+          <img src="./images/section04/image-6.jpg" class="marqueePic" alt="" />
+          <h1>открытка</h1>
+          <img src="./images/section04/image-4.jpg" class="marqueePic" alt="" />
+        </div>
+      </div>
+      <div class="marquee">
+        <div class="marquee-track left" id="marquee-third">
+          <img src="./images/section04/image.jpg" class="marqueePic" alt="" />
+          <h1>Море</h1>
+          <img src="./images/section04/image-1.jpg" class="marqueePic" alt="" />
+          <h1>мама</h1>
+          <img src="./images/section04/image-2.jpg" class="marqueePic" alt="" />
+          <h1>мультик</h1>
+          <img src="./images/section04/image-6.jpg" class="marqueePic" alt="" />
+          <h1>Родители</h1>
+          <img src="./images/section04/image-3.jpg" class="marqueePic" alt="" />
+          <h1>Школа</h1>
+          <img src="./images/section04/image-4.jpg" class="marqueePic" alt="" />
+          <h1>Первая любовь</h1>
+          <img src="./images/section04/image.jpg" class="marqueePic" alt="" />
+          <h1>звезды</h1>
+          <img src="./images/section04/image-5.jpg" class="marqueePic" alt="" />
+          <h1>москва</h1>
+          <img src="./images/section04/image.jpg" class="marqueePic" alt="" />
+          <h1>Море</h1>
+          <img src="./images/section04/image-1.jpg" class="marqueePic" alt="" />
+          <h1>мама</h1>
+          <img src="./images/section04/image-2.jpg" class="marqueePic" alt="" />
+          <h1>мультик</h1>
+          <img src="./images/section04/image-6.jpg" class="marqueePic" alt="" />
+          <h1>Родители</h1>
+          <img src="./images/section04/image-3.jpg" class="marqueePic" alt="" />
+          <h1>Школа</h1>
+          <img src="./images/section04/image-4.jpg" class="marqueePic" alt="" />
+          <h1>Первая любовь</h1>
+          <img src="./images/section04/image.jpg" class="marqueePic" alt="" />
+          <h1>звезды</h1>
+          <img src="./images/section04/image-5.jpg" class="marqueePic" alt="" />
+          <h1>москва</h1>
+          <img src="./images/section04/image-6.jpg" class="marqueePic" alt="" />
+          <h1>открытка</h1>
+          <img src="./images/section04/image-4.jpg" class="marqueePic" alt="" />
+          <h1>Летний дождь</h1>
+          <img src="./images/section04/image-6.jpg" class="marqueePic" alt="" />
+          <h1>открытка</h1>
+          <img src="./images/section04/image-4.jpg" class="marqueePic" alt="" />
+        </div>
+      </div>
+      <div class="modalBox">
+        <h2>привет</h2>
+      </div>
+      <div class="box">
+        <div class="phone draggable" id="drModal01"></div>
+        <div class="bracelet draggable" id="drModal02"></div>
+        <div class="card draggable" id="drModal03"></div>
+        <div class="flower draggable" id="drModal04"></div>
+        <div class="heart draggable" id="drModal05"></div>
+        <div class="keys draggable" id="drModal06"></div>
+        <div class="map draggable" id="drModal07"></div>
+        <div class="photo draggable" id="drModal08"></div>
+        <div class="strip draggable" id="drModal09"></div>
+        <div class="paper draggable" id="drModal10"></div>
+      </div>
+      <div class="section02 row">
+        <div class="wrapperVer">
+          <div class="absoluteBlock">
+            <div class="imgCaptionWrapper">
+              <h3>10</h3>
+              <img
+                src="./images/absoluteBlock/pink.png"
+                alt=""
+                class="pinkImgPic"
+              />
+            </div>
+            <h1 class="otkrit">открыть</h1>
+            <img src="./images/absoluteBlock/dino.png" alt="" class="dino" />
+            <h1 class="zavesu">завесу</h1>
+            <div class="imgCaptionWrapper padik">
+              <h3>12</h3>
+              <img
+                src="./images/absoluteBlock/padik.png"
+                alt=""
+                class="padik"
+              />
+            </div>
+            <div class="imgCaptionWrapper school">
+              <h3>15</h3>
+              <img
+                src="./images/absoluteBlock/school.png"
+                alt=""
+                class="school"
+              />
+            </div>
+            <div class="imgCaptionWrapper winter">
+              <h3>11</h3>
+              <img
+                src="./images/absoluteBlock/winter.png"
+                alt=""
+                class="winter"
+              />
+            </div>
+            <h1 class="chuzhoi">чужой</h1>
+            <img src="./images/absoluteBlock/tooth.png" alt="" class="tooth" />
+            <div class="imgCaptionWrapper train">
+              <h3>13</h3>
+              <img
+                src="./images/absoluteBlock/train.png"
+                alt=""
+                class="train"
+              />
+            </div>
+            <div class="imgCaptionWrapper winterHouse">
+              <h3>14</h3>
+              <img
+                src="./images/absoluteBlock/winterHouse.png"
+                alt=""
+                class="winterHouse"
+              />
+            </div>
+            <h1 class="taini">тайны</h1>
+          </div>
+          <div class="absoluteBlockMiss">
+            <div class="missingImg01 missing-block">
+              <div class="missingControls">
+                <div class="missing red" id="clsoe01"></div>
+                <div class="missing yel"></div>
+                <div class="missing green"></div>
+              </div>
+            </div>
+            <div class="missingImg02 missing-block">
+              <div class="missingControls">
+                <div class="missing red" id="clsoe02"></div>
+                <div class="missing yel"></div>
+                <div class="missing green"></div>
+              </div>
+            </div>
+            <div class="missingImg03 missing-block">
+              <div class="missingControls">
+                <div class="missing red" id="clsoe03"></div>
+                <div class="missing yel"></div>
+                <div class="missing green"></div>
+              </div>
+            </div>
+            <div class="missingImg04 missing-block">
+              <div class="missing gray" id="clsoe04"></div>
+            </div>
+          </div>
+        </div>
+        <div class="wrapperVer right">
+          <div class="wrapperVer fotiki">
+            <img class="fotka" id="fotka01" src="./images/fotka01.png" alt="" />
+            <img class="fotka" id="fotka02" src="./images/fotka02.png" alt="" />
+            <div class="fotik">
+              <div class="printFoto"></div>
+            </div>
+          </div>
+          <div class="absoluteBlock2">
+            <div class="imgCaptionWrapper boy">
+              <h3>16</h3>
+              <img src="./images/zastilo/boy.png" alt="" class="boy" />
+            </div>
+            <div class="imgCaptionWrapper finger">
+              <h3>17</h3>
+              <img src="./images/zastilo/finger.png" alt="" class="finger" />
+            </div>
+            <div class="imgCaptionWrapper guys">
+              <h3>18</h3>
+              <img src="./images/zastilo/guys.png" alt="" class="guys" />
+            </div>
+            <div class="imgCaptionWrapper kitchen">
+              <h3>19</h3>
+              <img src="./images/zastilo/kitchen.png" alt="" class="kitchen" />
+            </div>
+            <div class="imgCaptionWrapper ticket">
+              <img src="./images/zastilo/ticket.png" alt="" class="ticket" />
+            </div>
+            <h1 class="zdes">здесь</h1>
+            <h1 class="zastilo">застыло</h1>
+            <h1 class="vremya">время</h1>
+          </div>
+        </div>
+      </div>
+      <div class="zanovoWrap">
+        <div class="wrapperHor">
+          <div class="wrapperHor divani">
+            <div class="imgCaptionWrapper divanWrap">
+              <h3>20</h3>
+              <img src="./images/zanovo/divan.png" alt="" class="divan" />
+            </div>
+            <div class="imgCaptionWrapper girlWrap">
+              <h3>21</h3>
+              <img src="./images/zanovo/girl.png" alt="" class="girl" />
+            </div>
+          </div>
+          <div class="wrapperHor fill end">
+            <div class="imgCaptionWrapper diskiWrap">
+              <h3>22</h3>
+              <img src="./images/zanovo/diski.png" alt="" class="diski" />
+            </div>
+          </div>
+        </div>
+        <div class="wrapperHor fill paperShipWrap">
+          <h1>рисовать</h1>
+          <img src="./images/zanovo/paperShip.png" alt="" class="paperShip" />
+          <h1>забытое</h1>
+        </div>
+        <div class="wrapperHor fill last">
+          <div class="imgCaptionWrapper">
+            <h3>23</h3>
+            <img src="./images/zanovo/cup.png" alt="" class="cup" />
+          </div>
+          <div class="bukashkaWrap">
+            <img src="./images/zanovo/bukashka.png" class="bukashka" alt="" />
+            <h1>заново</h1>
+          </div>
+          <img src="./images/zanovo/crayon.png" alt="" class="crayon" />
+        </div>
+      </div>
+      <div class="risovalka">
+        <div class="controls">
+          <label><input type="color" id="colorPicker" value="#0F6225" /></label>
+        </div>
+        <canvas id="paintCanvas"></canvas>
+      </div>
+
+      <div class="Footer">
+        <h2 class="footerNumbers">01</h2>
+        <h2 class="footerNumbers">02</h2>
+        <h2 class="footerNumbers">03</h2>
+        <div class="footerWrapVer">
+          <div class="footerWrapInside">
+            <h2 style="text-transform: uppercase">Автор:</h2>
+            <h2>Коростелева эмилия</h2>
+          </div>
+          <div class="footerWrapInside">
+            <h2 style="text-transform: uppercase">Куратор:</h2>
+            <h2>Рихтер Камила</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <audio id="bearAudio" src="./bearSound.mp3"></audio>
+
+    <script src="https://cdn.jsdelivr.net/npm/page-flip@2.0.7/dist/js/page-flip.browser.min.js"></script>
+
+    <script src="./javascript/draggable.js"></script>
+    <script src="./javascript/fotik.js"></script>
+    <script src="./javascript/marquee.js"></script>
+    <script src="./javascript/risovalka.js"></script>
+    <script src="./javascript/hide.js"></script>
+    <script src="./javascript/bearSound.js"></script>
+    <script src="./javascript/progressBar.js"></script>
+    <script src="./javascript/listalka.js"></script>
+    <script src="./javascript/firstModals.js"></script>
+  </body>
+</html>
