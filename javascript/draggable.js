@@ -7,15 +7,15 @@ let offsetX = 0,
 
 let isDragging = false;
 
-const move = (e) => {
+const move = (x, y) => {
   if (!activeEl) return;
 
-  isDragging = true; // как только мышь двигается — это уже не клик
+  isDragging = true;
 
   const boxRect = box.getBoundingClientRect();
 
-  let newX = e.clientX - boxRect.left - offsetX;
-  let newY = e.clientY - boxRect.top - offsetY;
+  let newX = x - boxRect.left - offsetX;
+  let newY = y - boxRect.top - offsetY;
 
   newX = Math.max(0, Math.min(newX, box.clientWidth - activeEl.offsetWidth));
   newY = Math.max(0, Math.min(newY, box.clientHeight - activeEl.offsetHeight));
@@ -27,37 +27,64 @@ const move = (e) => {
 draggables.forEach((el) => {
   el.addEventListener('mousedown', (e) => {
     activeEl = el;
-    isDragging = false; // сбрасываем при новом нажатии
+    isDragging = false;
 
     const elRect = el.getBoundingClientRect();
     offsetX = e.clientX - elRect.left;
     offsetY = e.clientY - elRect.top;
 
-    document.addEventListener('mousemove', move);
+    document.addEventListener('mousemove', mouseMoveHandler);
+    document.addEventListener('mouseup', mouseUpHandler);
   });
 });
 
-document.addEventListener('mouseup', () => {
+function mouseMoveHandler(e) {
+  move(e.clientX, e.clientY);
+}
+
+function mouseUpHandler() {
   if (activeEl) {
     activeEl = null;
-    document.removeEventListener('mousemove', move);
+    document.removeEventListener('mousemove', mouseMoveHandler);
+    document.removeEventListener('mouseup', mouseUpHandler);
   }
+}
+
+draggables.forEach((el) => {
+  el.addEventListener('touchstart', (e) => {
+    activeEl = el;
+    isDragging = false;
+
+    const touch = e.touches[0];
+    const elRect = el.getBoundingClientRect();
+    offsetX = touch.clientX - elRect.left;
+    offsetY = touch.clientY - elRect.top;
+
+    document.addEventListener('touchmove', touchMoveHandler, {
+      passive: false,
+    });
+    document.addEventListener('touchend', touchEndHandler);
+  });
 });
 
-// Модалка
-// const modal = document.querySelector('.modalBox');
-// const flower = document.querySelector('.flower');
+function touchMoveHandler(e) {
+  e.preventDefault(); // важно для блокировки прокрутки при drag
+  const touch = e.touches[0];
+  move(touch.clientX, touch.clientY);
+}
 
-// flower.addEventListener('click', (e) => {
-//   if (!isDragging) {
-//     e.stopPropagation();
-//     modal.style.display = 'flex';
-//   }
-// });
+function touchEndHandler() {
+  if (activeEl) {
+    activeEl = null;
+    document.removeEventListener('touchmove', touchMoveHandler);
+    document.removeEventListener('touchend', touchEndHandler);
+  }
+}
+
+// модалка
 
 const totalDrModals = 10;
 
-// Добавим обработку открытия окон
 for (let i = 1; i <= totalDrModals; i++) {
   const index = i.toString().padStart(2, '0'); // "01", "02", ...
 

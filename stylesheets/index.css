@@ -1,6 +1,6 @@
 h1 {
   font-family: 'Lovelace Regular';
-  font-size: var(--h1-font-size);
+  font-size: clamp(0px, 5.417vw, 104px);
   color: white;
   text-transform: uppercase;
 }
@@ -25,6 +25,10 @@ h1.questions {
   padding-right: 108px;
   padding-left: 108px;
   margin-top: 24px;
+}
+
+.margin-right {
+  margin-right: 50px;
 }
 
 h2 {
@@ -186,7 +190,7 @@ h4 {
 .section02 {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: calc(100% - 264px);
   max-width: 1720px;
   gap: 0px;
 }
@@ -199,6 +203,7 @@ h1.paddingTop {
   width: 100%;
   display: flex;
   position: relative;
+  align-items: center;
 }
 
 .wrapperHor:nth-child(2) {
@@ -227,7 +232,8 @@ h1.paddingTop {
 }
 
 .section02PicPen {
-  width: 662px;
+  max-width: 662px;
+  width: 34.479vw;
   height: 74px;
   margin-top: 16px;
   object-fit: contain;
@@ -240,13 +246,66 @@ h1.paddingTop {
 }
 
 .section02PicGum {
-  width: 274px;
+  max-width: 274px;
+  min-width: 250px;
   object-fit: contain;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .section02PicTea {
-  width: 152px;
+  max-width: 152px;
+  min-width: 120px;
+  width: 100%;
   object-fit: contain;
+  z-index: 9999;
+
+  cursor: pointer;
+  transition: transform 0.2s ease;
+
+  pointer-events: auto;
+  z-index: 99999;
+  position: relative;
+}
+
+.boil {
+  animation: boilShake 2s ease forwards;
+}
+
+@keyframes boilShake {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  10% {
+    transform: translate(-2px, -1px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(2px, 2px) rotate(1deg);
+  }
+  30% {
+    transform: translate(-2px, 1px) rotate(-1deg);
+  }
+  40% {
+    transform: translate(2px, -2px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(1px, -2px) rotate(1deg);
+  }
+  70% {
+    transform: translate(-1px, 1px) rotate(-0.5deg);
+  }
+  80% {
+    transform: translate(1px, -1px) rotate(0.5deg);
+  }
+  90% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
 }
 
 .section02PicPrint {
@@ -265,34 +324,42 @@ h1.paddingTop {
 }
 
 .bookWrap {
-  width: 725px;
   position: relative;
-  height: 998px;
+  /* height: 998px; */
 }
 
 .book {
-  right: 0;
-  position: absolute;
-  object-fit: cover;
+  /* right: 0; */
+  /* position: absolute; */
+  /* object-fit: cover; */
 }
 
 .bearWrap {
   position: relative;
-
-  width: 924px;
-  height: 843px;
+  max-width: 924px;
+  width: 48.125vw;
+  /* min-width: 800px; */
+  height: 43.958vw;
+  max-height: 844px;
   background-image: url('../images/section03/bear.png');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+  margin-left: 50px;
+}
+
+.no {
+  align-items: flex-start;
+  height: fit-content;
 }
 
 .bearLight {
   aspect-ratio: 1;
-  width: 134px;
+  max-width: 134px;
+  width: 6.979vw;
   position: absolute;
-  left: 400px;
-  top: 415px;
+  right: clamp(0px, 19.208vw, 384px);
+  top: clamp(0px, 21.667vw, 416px);
   cursor: pointer;
   transition: 0.1s;
 }
@@ -325,6 +392,7 @@ h1.paddingTop {
   gap: 40px;
   white-space: nowrap;
   will-change: transform;
+  align-items: flex-end;
 }
 
 .marqueeContentLeft {
@@ -370,6 +438,7 @@ h1.paddingTop {
 }
 
 .box {
+  content: '';
   position: relative;
   overflow: hidden;
   width: 100%;
@@ -379,6 +448,7 @@ h1.paddingTop {
   background-image: url('../images/box.jpg');
   background-repeat: no-repeat;
   background-position: center;
+  background-size: contain;
 
   margin-top: 50px;
 }
@@ -604,6 +674,43 @@ h1.paddingTop {
   width: 184px;
   right: 24px;
   top: 64px;
+  position: absolute;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.roar {
+  animation: roarAnimation 1.2s ease forwards;
+}
+
+@keyframes roarAnimation {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  10% {
+    transform: scale(1.1) rotate(-5deg);
+  }
+  20% {
+    transform: scale(1.15) rotate(5deg);
+  }
+  30% {
+    transform: scale(1.2) rotate(-4deg);
+  }
+  40% {
+    transform: scale(1.25) rotate(4deg);
+  }
+  50% {
+    transform: scale(1.3) rotate(-3deg);
+  }
+  60% {
+    transform: scale(1.35) rotate(3deg);
+  }
+  70% {
+    transform: scale(1.3) rotate(0deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
 }
 
 .padik {
@@ -641,13 +748,6 @@ h1.paddingTop {
   bottom: 0;
 }
 
-.tooth {
-  width: 106px;
-  object-fit: contain;
-  bottom: 160px;
-  left: 470px;
-}
-
 .taini {
   bottom: 20px;
   right: 132px;
@@ -683,6 +783,10 @@ h1.paddingTop {
   background-repeat: no-repeat;
   right: 0;
   z-index: 49;
+}
+
+.zanovoWrapMobile {
+  display: none;
 }
 
 .fotka {
@@ -804,6 +908,9 @@ h1.paddingTop {
   width: 45.417vw;
   height: 43.333vw;
 
+  max-width: 870px;
+  max-height: 820px;
+
   background-image: url('../images/missing/miss01.png');
   background-repeat: no-repeat;
   background-position: center;
@@ -811,8 +918,8 @@ h1.paddingTop {
 
   position: absolute;
 
-  top: 18px;
-  left: 54px;
+  left: clamp(0px, 2.813vw, 54px);
+  top: clamp(0px, 0.938vw, 18px);
 
   z-index: 3;
 }
@@ -820,6 +927,9 @@ h1.paddingTop {
 .missingImg02 {
   width: 29.948vw;
   height: 51.927vw;
+
+  max-width: 575px;
+  max-height: 998px;
 
   background-image: url('../images/missing/miss02.png');
   background-repeat: no-repeat;
@@ -837,6 +947,9 @@ h1.paddingTop {
 .missingImg03 {
   width: 34.375vw;
   height: 33.333vw;
+
+  max-width: 660px;
+  max-height: 640px;
 
   background-image: url('../images/missing/miss03.png');
   background-repeat: no-repeat;
@@ -1046,8 +1159,8 @@ canvas {
 
 .missingControls {
   position: absolute;
-  top: 23px;
-  left: 23px;
+  top: clamp(0px, 1.198vw, 23px);
+  left: clamp(0px, 1.198vw, 23px);
   display: flex;
   gap: 10px;
 }
@@ -1147,12 +1260,13 @@ canvas {
   height: 100vh;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .firstScreenModal {
   width: 1138px;
-  height: 725px;
-  position: relative;
+  max-height: 725px;
+  height: 100%;
   border-radius: 20px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(50px);
@@ -1161,6 +1275,8 @@ canvas {
   padding: 45px 60px;
   gap: 40px;
   justify-content: center;
+  margin: 50px;
+  position: relative;
 }
 
 .modalTextWrap {
@@ -1232,6 +1348,14 @@ canvas {
   width: 365px;
 }
 
+.section02Mobile {
+  display: none;
+}
+
+.section02Mobile2 {
+  display: none;
+}
+
 #modalPicFlower {
   width: 378px;
 }
@@ -1262,4 +1386,53 @@ canvas {
 
 #modalPicFotka {
   width: 336px;
+}
+
+.shake {
+  animation: shakeAndFall 2s ease forwards;
+}
+
+@keyframes shakeAndFall {
+  0% {
+    transform: rotate(0deg) translateY(0);
+  }
+  10% {
+    transform: rotate(-10deg);
+  }
+  20% {
+    transform: rotate(10deg);
+  }
+  30% {
+    transform: rotate(-8deg);
+  }
+  40% {
+    transform: rotate(8deg);
+  }
+  50% {
+    transform: rotate(-5deg);
+  }
+  60% {
+    transform: rotate(5deg);
+  }
+  70% {
+    transform: rotate(0deg);
+  }
+  80% {
+    transform: rotate(0deg) translateY(50px);
+  }
+  100% {
+    transform: rotate(90deg) translateY(150vh);
+  }
+}
+
+.tooth {
+  position: absolute;
+
+  width: 106px;
+  object-fit: contain;
+  bottom: 160px;
+  left: 470px;
+
+  cursor: pointer;
+  transition: transform 0.3s ease;
 }

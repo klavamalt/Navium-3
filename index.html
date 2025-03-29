@@ -3,12 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Цифровой архив воспоминаний</title>
+    <title>Цифровой архив Навиум</title>
     <link rel="stylesheet" href="./stylesheets/reset.css" />
     <link rel="stylesheet" href="./stylesheets/index.css" />
     <link rel="stylesheet" href="./stylesheets/fonts.css" />
     <link rel="stylesheet" href="./stylesheets/vars.css" />
     <link rel="stylesheet" href="./stylesheets/basics.css" />
+    <link rel="stylesheet" href="./stylesheets/responsive.css" />
+    <link rel="icon" href="./fav.ico" type="image/x-icon" />
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/page-flip@2.0.7/dist/css/page-flip.min.css"
@@ -558,6 +561,43 @@
           </div>
         </div>
       </div>
+      <div class="section02Mobile">
+        <img src="./images/section02/image.png" class="section02Pic01" alt="" />
+        <img
+          src="./images/section02/section02PicFriends.png"
+          class="section02PicFriends"
+          alt=""
+        />
+        <h1 id="uznat">узнать</h1>
+        <img
+          src="./images/section02/section02PicPen.png"
+          class="section02PicPen"
+          alt=""
+        />
+        <h1 class="paddingTop" id="istoriu">историю</h1>
+        <img
+          src="./images/section02/section02PicGum.png"
+          class="section02PicGum"
+          alt=""
+        />
+        <h1 class="paddingTop" id="o_zhizni">о жизни</h1>
+        <img
+          src="./images/section02/section02PicTea.png"
+          class="section02PicTea"
+          alt=""
+        />
+        <img
+          src="./images/section02/section02PicPrint.png"
+          class="section02PicPrint"
+          alt=""
+        />
+        <h1 class="questions">????</h1>
+        <img
+          src="./images/section02/section02PicVideos.png"
+          class="section02PicVideos"
+          alt=""
+        />
+      </div>
       <div class="section02">
         <div class="wrapperHor end">
           <img
@@ -573,7 +613,7 @@
               class="section02PicFriends"
               alt=""
             />
-            <h1>узнать</h1>
+            <h1 id="uznat">узнать</h1>
           </div>
           <img
             src="./images/section02/section02PicPen.png"
@@ -582,17 +622,18 @@
           />
         </div>
         <div class="wrapperHor fill">
-          <h1 class="paddingTop">историю</h1>
+          <h1 class="paddingTop" id="istoriu">историю</h1>
           <img
             src="./images/section02/section02PicGum.png"
             class="section02PicGum"
             alt=""
           />
-          <h1 class="paddingTop">о жизни</h1>
+          <h1 class="paddingTop" id="o_zhizni">о жизни</h1>
           <img
             src="./images/section02/section02PicTea.png"
             class="section02PicTea"
             alt=""
+            id="chai"
           />
         </div>
         <div class="wrapperHor">
@@ -609,7 +650,7 @@
           />
         </div>
       </div>
-      <div class="wrapperHor fill">
+      <div class="wrapperHor fill no">
         <div class="bookWrap">
           <div id="book" class="page-flip-container">
             <img src="./images/book/02.png" alt="" class="my-pages" />
@@ -771,7 +812,7 @@
         <div class="paper draggable" id="drModal10"></div>
       </div>
       <div class="section02 row">
-        <div class="wrapperVer">
+        <div class="wrapperVer margin-right">
           <div class="absoluteBlock">
             <div class="imgCaptionWrapper">
               <h3>10</h3>
@@ -860,7 +901,7 @@
             <img class="fotka" id="fotka01" src="./images/fotka01.png" alt="" />
             <img class="fotka" id="fotka02" src="./images/fotka02.png" alt="" />
             <div class="fotik">
-              <div class="printFoto"></div>
+              <div class="printFoto" id="print01"></div>
             </div>
           </div>
           <div class="absoluteBlock2">
@@ -886,6 +927,113 @@
             <h1 class="zdes">здесь</h1>
             <h1 class="zastilo">застыло</h1>
             <h1 class="vremya">время</h1>
+          </div>
+        </div>
+      </div>
+      <div class="section02Mobile2">
+        <div class="absoluteBlock">
+          <div class="imgCaptionWrapper">
+            <h3>10</h3>
+            <img
+              src="./images/absoluteBlock/pink.png"
+              alt=""
+              class="pinkImgPic"
+            />
+          </div>
+          <h1 class="otkrit">открыть</h1>
+          <img src="./images/absoluteBlock/dino.png" alt="" class="dino" />
+          <h1 class="zavesu">завесу</h1>
+          <div class="imgCaptionWrapper padik">
+            <h3>12</h3>
+            <img src="./images/absoluteBlock/padik.png" alt="" class="padik" />
+          </div>
+          <div class="imgCaptionWrapper school">
+            <h3>15</h3>
+            <img
+              src="./images/absoluteBlock/school.png"
+              alt=""
+              class="school"
+            />
+          </div>
+          <div class="imgCaptionWrapper winter">
+            <h3>11</h3>
+            <img
+              src="./images/absoluteBlock/winter.png"
+              alt=""
+              class="winter"
+            />
+          </div>
+          <h1 class="chuzhoi">чужой</h1>
+          <img src="./images/absoluteBlock/tooth.png" alt="" class="tooth" />
+          <div class="imgCaptionWrapper train">
+            <h3>13</h3>
+            <img src="./images/absoluteBlock/train.png" alt="" class="train" />
+          </div>
+          <div class="imgCaptionWrapper winterHouse">
+            <h3>14</h3>
+            <img
+              src="./images/absoluteBlock/winterHouse.png"
+              alt=""
+              class="winterHouse"
+            />
+          </div>
+          <h1 class="taini">тайны</h1>
+        </div>
+        <div class="wrapperVer fotiki">
+          <img class="fotka" id="fotka03" src="./images/fotka01.png" alt="" />
+          <img class="fotka" id="fotka04" src="./images/fotka02.png" alt="" />
+          <div class="fotik">
+            <div class="printFoto" id="print02"></div>
+          </div>
+        </div>
+        <div class="absoluteBlock2">
+          <div class="imgCaptionWrapper boy">
+            <h3>16</h3>
+            <img src="./images/zastilo/boy.png" alt="" class="boy" />
+          </div>
+          <div class="imgCaptionWrapper finger">
+            <h3>17</h3>
+            <img src="./images/zastilo/finger.png" alt="" class="finger" />
+          </div>
+          <div class="imgCaptionWrapper guys">
+            <h3>18</h3>
+            <img src="./images/zastilo/guys.png" alt="" class="guys" />
+          </div>
+          <div class="imgCaptionWrapper kitchen">
+            <h3>19</h3>
+            <img src="./images/zastilo/kitchen.png" alt="" class="kitchen" />
+          </div>
+          <div class="imgCaptionWrapper ticket">
+            <img src="./images/zastilo/ticket.png" alt="" class="ticket" />
+          </div>
+          <h1 class="zdes">здесь</h1>
+          <h1 class="zastilo">застыло</h1>
+          <h1 class="vremya">время</h1>
+        </div>
+        <div class="absoluteBlockMiss">
+          <div class="missingImg01 missing-block">
+            <div class="missingControls">
+              <div class="missing red" id="clsoe01"></div>
+              <div class="missing yel"></div>
+              <div class="missing green"></div>
+            </div>
+          </div>
+          <div class="missingImg02 missing-block">
+            <div class="missingControls">
+              <div class="missing red" id="clsoe02"></div>
+              <div class="missing yel"></div>
+              <div class="missing green"></div>
+            </div>
+          </div>
+          <div class="missingImg03 missing-block">
+            <div class="missingControls">
+              <div class="missing red" id="clsoe03"></div>
+              <div class="missing yel"></div>
+              <div class="missing green"></div>
+            </div>
+          </div>
+          <div class="missingImg04 missing-block">
+            <div class="missing gray" id="clsoe04"></div>
           </div>
         </div>
       </div>
@@ -925,6 +1073,30 @@
           <img src="./images/zanovo/crayon.png" alt="" class="crayon" />
         </div>
       </div>
+      <div class="zanovoWrapMobile">
+        <div class="imgCaptionWrapper divanWrap">
+          <h3>20</h3>
+          <img src="./images/zanovo/divan.png" alt="" class="divan" />
+        </div>
+        <div class="imgCaptionWrapper girlWrap">
+          <h3>21</h3>
+          <img src="./images/zanovo/girl.png" alt="" class="girl" />
+        </div>
+        <div class="imgCaptionWrapper diskiWrap">
+          <h3>22</h3>
+          <img src="./images/zanovo/diski.png" alt="" class="diski" />
+        </div>
+        <h1 class="risovat">рисовать</h1>
+        <img src="./images/zanovo/paperShip.png" alt="" class="paperShip" />
+        <h1 class="zabitoe">забытое</h1>
+        <div class="imgCaptionWrapper">
+          <h3>23</h3>
+          <img src="./images/zanovo/cup.png" alt="" class="cup" />
+        </div>
+        <img src="./images/zanovo/bukashka.png" class="bukashka" alt="" />
+        <h1 class="zanovoText">заново</h1>
+        <img src="./images/zanovo/crayon.png" alt="" class="crayon" />
+      </div>
       <div class="risovalka">
         <div class="controls">
           <label><input type="color" id="colorPicker" value="#0F6225" /></label>
@@ -939,19 +1111,25 @@
         <div class="footerWrapVer">
           <div class="footerWrapInside">
             <h2 style="text-transform: uppercase">Автор:</h2>
-            <h2>Коростелева эмилия</h2>
+            <h2 style="text-transform: uppercase">Коростелева эмилия</h2>
           </div>
           <div class="footerWrapInside">
             <h2 style="text-transform: uppercase">Куратор:</h2>
-            <h2>Рихтер Камила</h2>
+            <h2 style="text-transform: uppercase">Рихтер Камила</h2>
           </div>
         </div>
       </div>
     </div>
+
+    <audio id="teaSound" src="./teaSound.mp3" preload="auto"></audio>
     <audio id="bearAudio" src="./bearSound.mp3"></audio>
+    <!-- <audio id="whoosh-sound" src="./whoosh.mp3" preload="auto"></audio> -->
+    <audio id="fotikSounds" src="./fotikSound.mp3" preload="auto"></audio>
+    <audio id="dino-sound" src="./dinoSound.mp3" preload="auto"></audio>
+    <audio id="toothSound" src="./toothSound.mp3" preload="auto"></audio>
 
     <script src="https://cdn.jsdelivr.net/npm/page-flip@2.0.7/dist/js/page-flip.browser.min.js"></script>
-
+    <script src="./javascript/sounds.js"></script>
     <script src="./javascript/draggable.js"></script>
     <script src="./javascript/fotik.js"></script>
     <script src="./javascript/marquee.js"></script>
@@ -961,5 +1139,6 @@
     <script src="./javascript/progressBar.js"></script>
     <script src="./javascript/listalka.js"></script>
     <script src="./javascript/firstModals.js"></script>
+    <script src="./javascript/chai.js"></script>
   </body>
 </html>

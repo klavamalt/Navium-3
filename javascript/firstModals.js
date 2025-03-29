@@ -46,7 +46,6 @@ document.addEventListener('keydown', (e) => {
   }
 });
 
-// 👇 Функция закрытия всех модалок
 function closeAllModals() {
   // modal01–07
   for (let i = 1; i <= 7; i++) {

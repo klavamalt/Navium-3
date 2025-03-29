@@ -7,7 +7,7 @@ body {
   width: 100vw;
 }
 
-html::-webkit-scrollbar {
+*::-webkit-scrollbar {
   display: none;
   scrollbar-width: none;
 }
@@ -66,4 +66,8 @@ html::-webkit-scrollbar {
     #998b3b 50.5%,
     #6189a3 87.5%
   );
+}
+
+h1 {
+  flex-shrink: 0;
 }
