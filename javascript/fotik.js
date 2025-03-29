@@ -1,38 +1,51 @@
-const printButton = document.querySelector('.printFoto');
+const printButtons = document.querySelectorAll('.printFoto');
 const fotka01 = document.getElementById('fotka01');
 const fotka02 = document.getElementById('fotka02');
+
+const mobileFotka01 = document.querySelector('.section02Mobile2 .fotka:first-child');
+const mobileFotka02 = document.querySelector('.section02Mobile2 .fotka:not(:first-child)');
+
 const modal01 = document.getElementById('fotikModalWin01');
 const modal02 = document.getElementById('fotikModalWin02');
 
 let activeIndex = 0;
 let zCounter = 10; // Начинаем с 10, чтобы оставить запас
 
-printButton.addEventListener('click', () => {
-  const currentFotka = activeIndex === 0 ? fotka01 : fotka02;
-  const nextFotka = activeIndex === 0 ? fotka02 : fotka01;
-  const currentModal = activeIndex === 0 ? modal01 : modal02;
-  const nextModal = activeIndex === 0 ? modal02 : modal01;
 
-  // Сжимаем текущую с задержкой
-  setTimeout(() => {
-    currentFotka.style.paddingBottom = 'clamp(0px, 10.417vw, 200px)';
-  }, 1000);
+printButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const isMobile = window.matchMedia('(max-width: 768px)').matches;
 
-  // Скрываем текущую модалку сразу
-  if (currentModal) currentModal.style.display = 'none';
+    const currentFotka = activeIndex === 0 ? (isMobile ? mobileFotka01 : fotka01) : (isMobile ? mobileFotka02 : fotka02);
+    const nextFotka = activeIndex === 0 ? (isMobile ? mobileFotka02 : fotka02) : (isMobile ? mobileFotka01 : fotka01);
+    const currentModal = activeIndex === 0 ? modal01 : modal02;
+    const nextModal = activeIndex === 0 ? modal02 : modal01;
 
-  // Поднимаем следующую фотку выше
-  zCounter++;
-  nextFotka.style.zIndex = zCounter;
+    // Сжимаем текущую с задержкой
+    setTimeout(() => {
+      currentFotka.style.paddingBottom = 'clamp(0px, 10.417vw, 10.417vw)';
+    }, 1000);
 
-  // Увеличиваем следующую фотку
-  nextFotka.style.paddingBottom = 'clamp(0px, 23.438vw, 450px)';
+    // Скрываем текущую модалку сразу
+    if (currentModal) currentModal.style.display = 'none';
 
-  // Показываем следующую модалку с задержкой
-  setTimeout(() => {
-    if (nextModal) nextModal.style.display = 'flex';
-  }, 800);
+    // Поднимаем следующую фотку выше
+    zCounter++;
+    nextFotka.style.zIndex = zCounter;
 
-  // Переключаем активную
-  activeIndex = activeIndex === 0 ? 1 : 0;
+    // Увеличиваем следующую фотку
+    if (isMobile) {
+      nextFotka.style.paddingBottom = '300px';
+    } else {
+      nextFotka.style.paddingBottom = 'clamp(0px, 23.438vw, 450px)';
+    }
+
+    // Показываем следующую модалку с задержкой
+    setTimeout(() => {
+      if (nextModal) nextModal.style.display = 'flex';
+    }, 800);
+
+    // Переключаем активную
+    activeIndex = activeIndex === 0 ? 1 : 0;
+  });
 });

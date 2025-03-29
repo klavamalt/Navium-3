@@ -1285,7 +1285,8 @@ canvas {
   display: flex;
   flex-direction: column;
   gap: 1.875vw;
-  max-width: 25.52vw;
+  max-width: 35.52vw;
+  margin: 0 auto;
 }
 
 .modalPic {
@@ -1337,7 +1338,7 @@ canvas {
 }
 
 #modalPicPhone {
-  width: 15vw;
+  width: 25vw;
 }
 
 #modalPicBracelet {
@@ -1357,7 +1358,7 @@ canvas {
 }
 
 #modalPicFlower {
-  width: 19.68vw;
+  width: 29.68vw;
 }
 
 #modalPicHeart {
@@ -1373,7 +1374,7 @@ canvas {
 }
 
 #modalPicPhoto {
-  width: 18.125vw;
+  width: 28.125vw;
 }
 
 #modalPicStrip {
@@ -1385,7 +1386,7 @@ canvas {
 }
 
 #modalPicFotka {
-  width: 17.5vw;
+  width: 27.5vw;
 }
 
 .shake {

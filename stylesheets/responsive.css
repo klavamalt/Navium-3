@@ -139,7 +139,7 @@
     height: calc(100vh - 100px);
     justify-content: flex-start;
     overflow: auto;
-    max-height: none;
+    max-height: none; 
   }
 
   .section02.row {
@@ -281,7 +281,7 @@
     max-width: none;
     max-height: none;
     /* padding-bottom: 100px; */
-    padding-bottom: 300px;
+    /* padding-bottom: 300px; */
   }
 
   .absoluteBlock2 {
@@ -315,7 +315,7 @@
   .ticket {
     width: 132px;
     left: 0;
-    top: 88px;
+    top: 75px;
   }
 
   .finger {
@@ -330,6 +330,7 @@
     width: 110px;
     right: 82px;
     top: 20px;
+    bottom: unset;
   }
 
   .absoluteBlockMiss {
@@ -572,6 +573,12 @@
     padding: 55px 55px;
     height: fit-content;
     justify-content: flex-start;
+
+    max-height: unset;
+  }
+  
+  .modalTextWrap {
+    max-width: 100%;
   }
 
   .modalBg {
@@ -668,11 +675,6 @@
     width: calc(100% - 34px);
     height: 133.333vw;
     max-width: none;
-  }
-
-  .box div {
-    width: 20%;
-    height: 100px;
   }
 
   .bearWrap {
@@ -1008,7 +1010,7 @@
     max-width: none;
     max-height: none;
     /* padding-bottom: 100px; */
-    padding-bottom: 300px;
+    /* padding-bottom: 300px; */
   }
 
   .absoluteBlock2 {
@@ -1042,7 +1044,7 @@
   .ticket {
     width: 132px;
     left: 0;
-    top: 88px;
+    top: 75px;
   }
 
   .finger {
@@ -1056,7 +1058,8 @@
   .guys {
     width: 110px;
     right: 82px;
-    top: 20px;
+    top: 0;
+    bottom: unset;
   }
 
   .absoluteBlockMiss {
@@ -1082,6 +1085,11 @@
     width: 250px;
     height: 244px;
     top: 10px;
+  }
+
+  .missing-block {
+    max-width: unset;
+    max-height: unset;
   }
 
   .missingImg03 .missingControls {
@@ -1124,6 +1132,7 @@
 
   .risovalka {
     width: calc(100% - 42px);
+    max-width: unset;
   }
 
   .controls {
@@ -1299,6 +1308,11 @@
     padding: 55px 55px;
     height: fit-content;
     justify-content: flex-start;
+    max-height: unset;
+  }
+
+  .modalTextWrap {
+    max-width: 100%;
   }
 
   .modalBg {
@@ -1398,8 +1412,8 @@
   }
 
   .box div {
-    width: 20%;
-    height: 100px;
+    width: 35%;
+    height: 157px;
   }
 
   .bearWrap {
