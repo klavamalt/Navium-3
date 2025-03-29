@@ -226,7 +226,7 @@ h1.paddingTop {
 }
 
 .section02Pic01 {
-  width: 132px;
+  width: 6.875vw;
   aspect-ratio: 1;
   margin-right: 56px;
 }
@@ -616,33 +616,33 @@ h1.paddingTop {
 
 .absoluteBlock {
   position: relative;
-  width: 1068px;
-  height: 851px;
-  margin-top: 50px;
+  width: 55.625vw;
+  height: 44.32vw;
+  margin-top: 2.6vw;
 }
 
 .absoluteBlockMiss {
   position: relative;
-  max-width: 1068px;
-  min-width: 10px;
-  height: 998px;
-  margin-top: 50px;
+  max-width: 55.625vw;
+  min-width: 0.52vw;
+  height: 51.979vw;
+  margin-top: 2.6vw;
 }
 
 .absoluteBlock2 {
   position: relative;
-  width: 575px;
-  height: 878px;
-  margin-top: 50px;
-  top: 50px;
+  width: 29.94vw;
+  height: 45.73vw;
+  margin-top: 2.6vw;
+  top: 2.6vw;
 }
 
 .zanovoWrap {
-  margin-top: 50px;
+  margin-top: 2.6vw;
   display: flex;
-  max-width: 1606px;
+  max-width: 83.64vw;
   width: 100%;
-  height: 568px;
+  height: 29.58vw;
   flex-direction: column;
 }
 
@@ -666,14 +666,14 @@ h1.paddingTop {
 
 .pinkImgPic {
   object-fit: contain;
-  width: 267px;
+  width: 13.9vw;
 }
 
 .dino {
   object-fit: contain;
-  width: 184px;
-  right: 24px;
-  top: 64px;
+  width: 9.58vw;
+  right: 1.25vw;
+  top: 3.33vw;
   position: absolute;
   transition: transform 0.3s ease;
   cursor: pointer;
@@ -715,64 +715,64 @@ h1.paddingTop {
 
 .padik {
   object-fit: contain;
-  width: 265px;
-  top: 238px;
-  right: 267px;
+  width: 13.8vw;
+  top: 12.39vw;
+  right: 13.9vw;
 }
 
 .school {
   object-fit: contain;
-  width: 132px;
+  width: 6.87vw;
   left: 0;
-  top: 412px;
+  top: 21.45vw;
 }
 
 .winter {
   object-fit: contain;
-  width: 132px;
-  left: 268px;
-  top: 411px;
+  width: 6.87vw;
+  left: 13.96vw;
+  top: 21.406vw;
 }
 
 .train {
   object-fit: contain;
-  width: 265px;
-  bottom: 154px;
-  right: 132px;
+  width: 13.8vw;
+  bottom: 8.02vw;
+  right: 6.875vw;
 }
 
 .winterHouse {
   object-fit: contain;
-  width: 267px;
+  width: 13.9vw;
   left: 0;
   bottom: 0;
 }
 
 .taini {
-  bottom: 20px;
-  right: 132px;
+  bottom: 1.04vw;
+  right: 6.875vw;
 }
 
 .chuzhoi {
-  bottom: 148px;
+  bottom: 7.71vw;
   left: 0;
 }
 
 .zavesu {
-  top: 288px;
+  top: 15vw;
   left: 0;
 }
 
 .otkrit {
-  top: 114px;
-  left: 292px;
+  top: 5.93vw;
+  left: 15.208vw;
 }
 
 .fotik {
   position: absolute;
 
-  max-width: 500px;
-  max-height: 722px;
+  max-width: 26.042vw;
+  max-height: 37.604vw;
 
   width: 26.042vw;
   height: 37.604vw;
@@ -791,12 +791,12 @@ h1.paddingTop {
 
 .fotka {
   position: absolute;
-  max-height: 450px;
-  max-width: 294px;
+  max-height: 23.438vw;
+  max-width: 15.31vw;
 
   height: 23.438vw;
-  width: clamp(0px, 14.844vw, 285px);
-  padding-bottom: clamp(0px, 10.417vw, 200px);
+  width: clamp(0px, 14.844vw, 14.844vw);
+  padding-bottom: clamp(0px, 10.417vw, 10.417vw);
   transition: padding-bottom 1s ease;
   /* right: clamp(0px, 5.417vw, 309px); */
   right: 0;
@@ -804,24 +804,24 @@ h1.paddingTop {
 }
 
 .section02.row .wrapperVer:nth-child(1) {
-  max-width: 1068px;
+  max-width: 55.625vw;
   min-width: 0;
   width: 100%;
 }
 
 .section02.row .wrapperVer:nth-child(2) {
   height: fit-content;
-  width: 596px !important;
+  width: 31.041vw !important;
   width: 100%;
   justify-content: flex-end;
   align-items: flex-end;
 }
 
 .wrapperVer.fotiki {
-  top: 50px;
+  top: 2.6vw;
   position: relative;
   justify-content: flex-end;
-  height: 932px;
+  height: 48.54vw;
 }
 
 .printFoto {
@@ -830,12 +830,12 @@ h1.paddingTop {
   cursor: pointer;
   position: absolute;
 
-  max-width: 56px;
+  max-width: 2.91vw;
   width: 2.917vw;
   aspect-ratio: 1;
 
-  top: clamp(0px, 11.563vw, 222px);
-  left: clamp(0px, 1.719vw, 33px);
+  top: clamp(0px, 11.563vw, 11.563vw);
+  left: clamp(0px, 1.719vw, 1.719vw);
 
   border-radius: 9999px;
   filter: blur(1px);
@@ -852,46 +852,46 @@ h1.paddingTop {
 .Footer {
   background-image: url('../images/footer.png');
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   position: relative;
-  height: 736px;
-  width: 1722px;
+  height: 38.3vw;
+  width: 89.58vw;
 
-  margin-top: 50px;
+  margin-top: 2.6vw;
 }
 
 .footerWrapVer {
   display: flex;
   flex-direction: column;
-  gap: 38px;
+  gap: 1.979vw;
   position: absolute;
-  top: 274px;
-  left: 114px;
+  top: 14.27vw;
+  left: 5.93vw;
 }
 
 .footerWrapInside {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 0.41vw;
 }
 
 .footerNumbers:nth-child(1) {
-  left: 114px;
-  top: 52px;
+  left: 5.9vw;
+  top: 2.71vw;
   position: absolute;
 }
 
 .footerNumbers:nth-child(2) {
-  left: 670px;
-  top: 52px;
+  left: 34.89vw;
+  top: 2.71vw;
 
   position: absolute;
 }
 
 .footerNumbers:nth-child(3) {
-  left: 1223px;
-  top: 52px;
+  left: 64.21vw;
+  top: 2.71vw;
 
   position: absolute;
 }
@@ -908,8 +908,8 @@ h1.paddingTop {
   width: 45.417vw;
   height: 43.333vw;
 
-  max-width: 870px;
-  max-height: 820px;
+  max-width: 45.31vw;
+  max-height: 43.33vw;
 
   background-image: url('../images/missing/miss01.png');
   background-repeat: no-repeat;
@@ -918,8 +918,8 @@ h1.paddingTop {
 
   position: absolute;
 
-  left: clamp(0px, 2.813vw, 54px);
-  top: clamp(0px, 0.938vw, 18px);
+  left: clamp(0px, 2.813vw, 2.813vw);
+  top: clamp(0px, 0.938vw, 0.938vw);
 
   z-index: 3;
 }
@@ -928,8 +928,8 @@ h1.paddingTop {
   width: 29.948vw;
   height: 51.927vw;
 
-  max-width: 575px;
-  max-height: 998px;
+  max-width: 29.94vw;
+  max-height: 51.97vw;
 
   background-image: url('../images/missing/miss02.png');
   background-repeat: no-repeat;
@@ -948,8 +948,8 @@ h1.paddingTop {
   width: 34.375vw;
   height: 33.333vw;
 
-  max-width: 660px;
-  max-height: 640px;
+  max-width: 34.37vw;
+  max-height: 33.3vw;
 
   background-image: url('../images/missing/miss03.png');
   background-repeat: no-repeat;
@@ -959,7 +959,7 @@ h1.paddingTop {
   position: absolute;
 
   left: 0;
-  top: 164px;
+  top: 8.54vw;
 
   z-index: 0;
 }
@@ -975,15 +975,15 @@ h1.paddingTop {
 
   position: absolute;
 
-  left: 146px;
-  top: 256px;
+  left: 7.6vw;
+  top: 13.3vw;
 
   z-index: 1;
 }
 
 .risovalka {
-  margin-top: 50px;
-  max-width: 1288px;
+  margin-top: 2.6vw;
+  max-width: 67.08vw;
   width: 100%;
   display: flex;
   position: relative;
@@ -1004,8 +1004,8 @@ h1.paddingTop {
 
 .controls {
   position: absolute;
-  top: 30px;
-  right: 66px;
+  top: 1.56vw;
+  right: 3.43vw;
 }
 
 #colorPicker {
@@ -1013,8 +1013,8 @@ h1.paddingTop {
   -moz-appearance: none;
   appearance: none;
   border: none;
-  width: 40px;
-  height: 40px;
+  width: 2.08vw;
+  height: 2.08vw;
   border-radius: 50%;
   padding: 0;
   cursor: pointer;
@@ -1038,77 +1038,77 @@ canvas {
 }
 
 .zdes {
-  top: 20px;
+  top: 1.04vw;
   right: 0;
 }
 
 .zastilo {
-  top: 297px;
+  top: 15.46vw;
 }
 
 .vremya {
   left: 0;
-  bottom: 188px;
+  bottom: 9.79vw;
 }
 
 .boy {
   object-fit: contain;
-  width: 132px;
-  left: 43px;
-  top: 30px;
+  width: 6.87vw;
+  left: 2.39vw;
+  top: 1.56vw;
 }
 
 .ticket {
   object-fit: contain;
-  width: 252px;
+  width: 13.125vw;
   right: 0;
-  top: 162px;
+  top: 8.43vw;
 }
 
 .guys {
   object-fit: contain;
-  width: 266px;
+  width: 13.854vw;
   right: 0;
-  bottom: 300px;
+  bottom: 15.625vw;
 }
 
 .finger {
   object-fit: contain;
-  width: 132px;
-  bottom: 23px;
-  left: 44px;
+  width: 6.875vw;
+  bottom: 1.19vw;
+  left: 2.29vw;
 }
 
 .kitchen {
   object-fit: contain;
-  width: 132px;
+  width: 6.875vw;
   right: 0;
-  bottom: 114px;
+  bottom: 5.937vw;
 }
 
 .divan {
-  width: 132px;
+  width: 6.875vw;
   object-fit: contain;
 }
 
 .girl {
-  width: 132px;
+  width: 6.875vw;
   object-fit: contain;
 }
 
 .girlWrap {
-  margin-top: 74px;
+  margin-top: 3.854vw;
 }
 
 .divani {
-  gap: 138px;
+  gap: 7.18vw;
   justify-content: flex-start;
   align-items: flex-start;
 }
 
 .diski {
-  width: 267px;
-  height: 1330x;
+  width: 13.9vw;
+  /* height: 1330x; */
 }
 
 .diskiWrap {
@@ -1116,30 +1116,30 @@ canvas {
 
 .wrapperHor.paperShipWrap {
   align-items: flex-end;
-  margin-top: -50px;
+  margin-top: -2.6vw;
 }
 
 .paperShip {
   width: 27.604vw;
-  margin-left: -50px;
-  margin-right: -60px;
+  margin-left: -2.6vw;
+  margin-right: -3.125vw;
   object-fit: contain;
-  translate: 0 20px;
+  translate: 0 1.04vw;
 }
 
 .cup {
-  width: 268px;
+  width: 13.958vw;
   object-fit: contain;
 }
 
 .crayon {
-  width: 450px;
+  width: 23.43vw;
   object-fit: contain;
 }
 
 .last {
   align-items: flex-end;
-  margin-top: 20px;
+  margin-top: 1.04vw;
 }
 
 .bukashkaWrap {
@@ -1147,26 +1147,26 @@ canvas {
 }
 
 .bukashkaWrap > h1 {
-  margin-left: 120px;
+  margin-left: 6.25vw;
 }
 
 .bukashka {
   position: absolute;
-  width: 120px;
+  width: 6.25vw;
   object-fit: contain;
   left: 0;
 }
 
 .missingControls {
   position: absolute;
-  top: clamp(0px, 1.198vw, 23px);
-  left: clamp(0px, 1.198vw, 23px);
+  top: clamp(0px, 1.198vw, 1.198vw);
+  left: clamp(0px, 1.198vw, 1.198vw);
   display: flex;
-  gap: 10px;
+  gap: 0.52vw;
 }
 
 .missing {
-  width: 14px;
+  width: 0.72vw;
   aspect-ratio: 1;
 
   background-position: center;
@@ -1195,9 +1195,9 @@ canvas {
 .missing.gray {
   position: absolute;
   background-image: url('../images/missing/dotGray.svg');
-  top: 12px;
-  left: 12px;
-  width: 12px;
+  top: 0.625vw;
+  left: 0.625vw;
+  width: 0.625vw;
   cursor: pointer;
 }
 
@@ -1208,21 +1208,21 @@ canvas {
 .missingImg02 .missing.red,
 .missingImg02 .missing.yel,
 .missingImg02 .missing.green {
-  width: 19px;
+  width: 0.98vw;
 }
 .missingImg02 .missingControls {
-  top: 10px;
-  left: 10px;
+  top: 0.52vw;
+  left: 0.52vw;
 }
 
 .missingImg03 .missing.red,
 .missingImg03 .missing.yel,
 .missingImg03 .missing.green {
-  width: 12px;
+  width: 0.625vw;
 }
 .missingImg03 .missingControls {
-  top: 20px;
-  left: 18px;
+  top: 1.04vw;
+  left: 0.93vw;
 }
 
 .missing-block {
@@ -1264,18 +1264,18 @@ canvas {
 }
 
 .firstScreenModal {
-  width: 1138px;
-  max-height: 725px;
+  width: 59.27vw;
+  max-height: 37.76vw;
   height: 100%;
-  border-radius: 20px;
+  border-radius: 1.04vw;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(50px);
   background-image: url('../images/modalTexture.png');
   display: flex;
-  padding: 45px 60px;
-  gap: 40px;
+  padding: 2.34vw 3.125vw;
+  gap: 2.08vw;
   justify-content: center;
-  margin: 50px;
+  margin: 2.6vw;
   position: relative;
 }
 
@@ -1284,8 +1284,8 @@ canvas {
   justify-content: center;
   display: flex;
   flex-direction: column;
-  gap: 36px;
-  max-width: 490px;
+  gap: 1.875vw;
+  max-width: 25.52vw;
 }
 
 .modalPic {
@@ -1294,31 +1294,31 @@ canvas {
 }
 
 #modalPic01 {
-  width: 452px;
+  width: 23.54vw;
 }
 
 #modalPic02 {
-  width: 489px;
+  width: 25.46vw;
 }
 
 #modalPic03 {
-  width: 489px;
+  width: 25.46vw;
 }
 
 #modalPic04 {
-  width: 411px;
+  width: 21.4vw;
 }
 
 #modalPic05 {
-  width: 495px;
+  width: 25.75vw;
 }
 
 #modalPic06 {
-  width: 410px;
+  width: 21.35vw;
 }
 
 #modalPic07 {
-  width: 489px;
+  width: 25.46vw;
 }
 
 .modalClose {
@@ -1326,9 +1326,9 @@ canvas {
   background-position: center;
   background-size: contain;
   position: absolute;
-  top: 45px;
-  right: 30px;
-  width: 36px;
+  top: 2.34vw;
+  right: 1.56vw;
+  width: 1.87vw;
   aspect-ratio: 1;
   cursor: pointer;
 }
@@ -1337,15 +1337,15 @@ canvas {
 }
 
 #modalPicPhone {
-  width: 288px;
+  width: 15vw;
 }
 
 #modalPicBracelet {
-  width: 279px;
+  width: 14.53vw;
 }
 
 #modalPicCard {
-  width: 365px;
+  width: 19.01vw;
 }
 
 .section02Mobile {
@@ -1357,35 +1357,35 @@ canvas {
 }
 
 #modalPicFlower {
-  width: 378px;
+  width: 19.68vw;
 }
 
 #modalPicHeart {
-  width: 438px;
+  width: 22.81vw;
 }
 
 #modalPicKeys {
-  width: 392px;
+  width: 20.41vw;
 }
 
 #modalPicMap {
-  width: 544px;
+  width: 28.3vw;
 }
 
 #modalPicPhoto {
-  width: 348px;
+  width: 18.125vw;
 }
 
 #modalPicStrip {
-  width: 188px;
+  width: 9.79vw;
 }
 
 #modalPicPaper {
-  width: 536px;
+  width: 27.91vw;
 }
 
 #modalPicFotka {
-  width: 336px;
+  width: 17.5vw;
 }
 
 .shake {
@@ -1428,10 +1428,10 @@ canvas {
 .tooth {
   position: absolute;
 
-  width: 106px;
+  width: 5.52vw;
   object-fit: contain;
-  bottom: 160px;
-  left: 470px;
+  bottom: 8.33vw;
+  left: 24.479vw;
 
   cursor: pointer;
   transition: transform 0.3s ease;
